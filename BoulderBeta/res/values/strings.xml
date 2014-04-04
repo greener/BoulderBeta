@@ -4,6 +4,7 @@
     <string name="app_name">BoulderBeta</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="searchButtonText">Search for Routes</string>
     <string name="routePlaceholderText">I\'m a route!</string>
 
 </resources>
