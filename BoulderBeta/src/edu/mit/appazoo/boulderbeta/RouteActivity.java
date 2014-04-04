@@ -12,15 +12,15 @@ import android.view.ViewGroup;
 import android.os.Build;
 
 /*
- * This is the class for the Main Activity, which could be like the homescreen
+ * This is the class Route Activity, which is a screen with information about a route
  */
 
-public class MainActivity extends ActionBarActivity {
+public class RouteActivity extends ActionBarActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		setContentView(R.layout.activity_route);
 
 		if (savedInstanceState == null) {
 			getSupportFragmentManager().beginTransaction()
