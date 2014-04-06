@@ -12,7 +12,6 @@
     <string name="difficulty_prompt">Choose a difficulty:</string>
 
     <string-array name="difficulty_arrays">
-        <item></item>
         <item>5.5</item>
         <item>5.6</item>
         <item>5.7</item>
@@ -24,7 +23,6 @@
     </string-array>
 
      <string-array name="holds_arrays">
-        <item></item>
         <item>jugs</item>
         <item>incuts</item>
         <item>slopers</item>

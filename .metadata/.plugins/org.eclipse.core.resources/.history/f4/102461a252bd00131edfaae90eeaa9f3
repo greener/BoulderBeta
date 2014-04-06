@@ -1,12 +1,16 @@
 package edu.mit.appazoo.boulderbeta;
 
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.ActionBar;
+import android.support.v4.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Spinner;
+import android.view.ViewGroup;
+import android.os.Build;
 
 /*
  * This is the class for the Main Activity, which could be like the homescreen
@@ -43,12 +47,6 @@ public class MainActivity extends ActionBarActivity {
 	
 	public void openSearch(View view){
 		Intent intent = new Intent(this, RoutesListActivity.class);
-		Spinner diffSpin = (Spinner)findViewById(R.id.spinner1);
-		String diff = diffSpin.getSelectedItem().toString();
-		Spinner holdSpin = (Spinner)findViewById(R.id.spinner2);
-		String hold = diffSpin.getSelectedItem().toString();
-		intent.putExtra("EXTRA_DIFF", diff);
-		intent.putExtra("EXTRA_HOLD", hold);
 		startActivity(intent);
 	}
 

@@ -47,8 +47,7 @@ public class MainActivity extends ActionBarActivity {
 		String diff = diffSpin.getSelectedItem().toString();
 		Spinner holdSpin = (Spinner)findViewById(R.id.spinner2);
 		String hold = diffSpin.getSelectedItem().toString();
-		intent.putExtra("EXTRA_DIFF", diff);
-		intent.putExtra("EXTRA_HOLD", hold);
+		
 		startActivity(intent);
 	}
 
