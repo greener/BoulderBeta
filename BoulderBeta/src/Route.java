@@ -1,0 +1,13 @@
+
+public class Route {
+	  	private Rating rating;
+	    private String name;
+	    private String setter;
+	    private String setter_description;
+	    private int style[];
+	    private int location;
+	    private String color;
+	    private int id;
+
+
+}
