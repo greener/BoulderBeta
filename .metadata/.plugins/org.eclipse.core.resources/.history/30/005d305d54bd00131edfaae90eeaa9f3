@@ -8,12 +8,6 @@ public class Route {
 	    private int location;
 	    private String color;
 	    private int id;
-	    private String difficulty;
 
-	    public Route(String name, Rating rating, int style[], String difficulty){
-	    	this.rating = rating;
-	    	this.name = name;
-	    	this.style = style;
-	    	this.difficulty = difficulty;
-	    }
+
 }

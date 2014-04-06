@@ -13,7 +13,7 @@ public class Route {
 	    public Route(String name, Rating rating, int style[], String difficulty){
 	    	this.rating = rating;
 	    	this.name = name;
-	    	this.style = style;
+	    	this.style[] = style[];
 	    	this.difficulty = difficulty;
 	    }
 }
