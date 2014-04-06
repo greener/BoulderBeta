@@ -6,5 +6,6 @@
     <string name="action_settings">Settings</string>
     <string name="searchButtonText">Search for Routes</string>
     <string name="routePlaceholderText">I\'m a route!</string>
+    <string name="routeName">Example Route</string>
 
 </resources>

@@ -1,4 +1,4 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
     android:layout_width="match_parent"
@@ -7,9 +7,106 @@
     tools:ignore="MergeRootFrame" >
 
     <TextView
-        android:id="@+id/location_text"
+        android:id="@+id/route_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/routePlaceholderText" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="@string/routeName" />
 
-</FrameLayout>
+    <ImageView
+        android:id="@+id/gym_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/route_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:background="#000000"
+        android:padding="1dp"
+        android:src="@drawable/map" />
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gym_map"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="30dp" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/DifficultyText"
+                android:text="Difficulty: " />
+
+            <TextView
+                android:id="@+id/DifficultyValue"
+                android:text="5 10b" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/StyleText"
+                android:text="Style: " />
+
+            <TextView
+                android:id="@+id/StyleValue"
+                android:text="overhung" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/Rating"
+                android:text="Rating: "
+                android:width="50dp" />
+
+            <RatingBar
+                android:id="@+id/RatingValue"
+                style="?android:attr/ratingBarStyleSmall"
+                android:numStars="5"
+                android:rating="4" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/DescriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tableLayout1"
+        android:layout_marginTop="29dp"
+        android:paddingLeft="15dp"
+        android:text="Description: " />
+
+    <TextView
+        android:id="@+id/DescriptionValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/DescriptionText"
+        android:padding="15dp"
+        android:text="Try this route if you want a route with lots of overhung bits and a few power moves!" />
+
+    <TextView
+        android:id="@+id/CommentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/DescriptionValue"
+        android:paddingLeft="15dp"
+        android:text="Comments " />
+
+</RelativeLayout>
