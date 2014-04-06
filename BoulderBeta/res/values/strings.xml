@@ -6,7 +6,11 @@
     <string name="action_settings">Settings</string>
     <string name="searchButtonText">Search for Routes</string>
     <string name="routePlaceholderText">I\'m a route!</string>
+<<<<<<< HEAD
     <string name="title_activity_routes_list">RoutesListActivity</string>
+=======
+    <string name="routeName">Example Route</string>
+>>>>>>> a3d4edfeddbadb36493f3238f3d56b8f1cc50b9f
 
     <string name="difficulty_prompt">Choose a difficulty:</string>
 
