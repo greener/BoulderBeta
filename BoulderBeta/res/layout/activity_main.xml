@@ -6,13 +6,52 @@
     tools:context="edu.mit.appazoo.boulderbeta.MainActivity"
     tools:ignore="MergeRootFrame" >
 
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="22dp"
+        android:entries="@array/difficulty_arrays"
+        android:prompt="@string/difficulty_prompt"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Select difficulty:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
     <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="130dp"
-        android:text="@string/searchButtonText"
-        android:onClick="openSearch" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="38dp"
+        android:onClick="openSearch"
+        android:text="@string/searchButtonText" />
 
-</RelativeLayout>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/spinner1"
+        android:text="Preferred holds:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinner1"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="22dp"
+        android:entries="@array/holds_arrays" />
+    
+    </RelativeLayout>
