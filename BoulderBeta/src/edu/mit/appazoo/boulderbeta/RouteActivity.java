@@ -1,15 +1,11 @@
 package edu.mit.appazoo.boulderbeta;
 
-import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
-import android.support.v4.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.LayoutInflater;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.os.Build;
+import android.widget.TextView;
 
 /*
  * This is the class Route Activity, which is a screen with information about a route
@@ -21,6 +17,12 @@ public class RouteActivity extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_route);
+		
+		/*Intent intent = getIntent();
+		String name = intent.getStringExtra("NAME");
+		TextView r = (TextView) findViewById(R.id.route_name);
+		r.setText(name);*/
+		
 
 	}
 

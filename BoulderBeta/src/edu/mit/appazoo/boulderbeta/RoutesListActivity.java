@@ -61,7 +61,9 @@ public class RoutesListActivity extends Activity {
 						break;
 				}*/
 				Object o = listview.getItemAtPosition(position);
+				String s = listview.getItemAtPosition(position).toString();
 				Intent act = new Intent(RoutesListActivity.this, RouteActivity.class);
+				act.putExtra("NAME", s);
 				startActivity(act);
 			}
 		});
