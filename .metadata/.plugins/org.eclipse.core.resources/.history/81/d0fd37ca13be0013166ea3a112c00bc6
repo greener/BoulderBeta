@@ -48,7 +48,7 @@ public class RoutesListActivity extends Activity {
 			@Override
 			public void onItemClick(AdapterView<?>parent,View view,
 					int position,long id){
-				/*switch( position )
+				switch( position )
 				{
 				case 0:	Intent act0 = new Intent(RoutesListActivity.this, RouteActivity.class);
 						startActivity(act0);
@@ -59,10 +59,7 @@ public class RoutesListActivity extends Activity {
 				case 2:	Intent act2 = new Intent(RoutesListActivity.this, RouteActivity.class);
 						startActivity(act2);
 						break;
-				}*/
-				Object o = listview.getItemAtPosition(position);
-				Intent act = new Intent(RoutesListActivity.this, RouteActivity.class);
-				startActivity(act);
+				}
 			}
 		});
         
