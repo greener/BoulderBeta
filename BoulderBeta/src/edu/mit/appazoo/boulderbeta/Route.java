@@ -2,20 +2,23 @@ package edu.mit.appazoo.boulderbeta;
 
 
 public class Route {
-	  	private Rating rating;
-	    private String name;
-	    private String setter;
-	    private String setter_description;
-	    private int style[];
-	    private int location;
-	    private String color;
-	    private int id;
-	    private String difficulty;
+	  	float rating;
+	    String name;
+	    String setter;
+	    String setter_description;
+	    String style;
+	    int location;
+	    String color;
+	    int id;
+	    String difficulty;
 
-	    public Route(String name, Rating rating, int style[], String difficulty){
+	    public Route(String name, float rating, String style, String difficulty, int location){
 	    	this.rating = rating;
-	    	this.name = name;
+	    	this.name= name;
 	    	this.style = style;
 	    	this.difficulty = difficulty;
+	    	this.location = location;
 	    }
+
+
 }

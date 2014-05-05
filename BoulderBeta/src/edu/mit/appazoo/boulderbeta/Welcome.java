@@ -14,7 +14,6 @@ import android.os.Build;
 
 public class Welcome extends ActionBarActivity {
 
-	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_welcome);
@@ -65,5 +64,8 @@ public class Welcome extends ActionBarActivity {
 		Intent intent = new Intent(this, MainActivity.class);
 		startActivity(intent);
 	}
-
+	public void openNewAccount(View view){
+		Intent intent = new Intent(this, NewAccountActivity.class);
+		startActivity(intent);
+	}
 }

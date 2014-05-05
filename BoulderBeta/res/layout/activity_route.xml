@@ -17,14 +17,14 @@
 
     <ImageView
         android:id="@+id/gym_map"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="273dp"
+        android:layout_height="245dp"
         android:layout_below="@+id/route_name"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="19dp"
         android:background="#000000"
         android:padding="1dp"
-        android:src="@drawable/map" />
+        android:src="@drawable/wall2" />
 
     <TableLayout
         android:id="@+id/tableLayout1"
@@ -56,7 +56,7 @@
 
             <TextView
                 android:id="@+id/StyleText"
-                android:text="Style: " />
+                android:text="Color: " />
 
             <TextView
                 android:id="@+id/StyleValue"
@@ -76,20 +76,9 @@
             <RatingBar
                 android:id="@+id/RatingValue"
                 style="?android:attr/ratingBarStyleSmall"
-                android:numStars="5"
-                android:rating="4" />
+                android:numStars="5" />
         </TableRow>
     </TableLayout>
-
-    <TextView
-        android:id="@+id/DescriptionText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/tableLayout1"
-        android:layout_marginTop="29dp"
-        android:paddingLeft="15dp"
-        android:text="Description: " />
 
     <TextView
         android:id="@+id/DescriptionValue"
@@ -108,5 +97,24 @@
         android:layout_below="@+id/DescriptionValue"
         android:paddingLeft="15dp"
         android:text="Comments " />
+
+    <TextView
+        android:id="@+id/DescriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tableLayout1"
+        android:layout_marginTop="14dp"
+        android:paddingLeft="15dp"
+        android:text="Description: " />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/DescriptionText"
+        android:layout_alignParentRight="true"
+        android:onClick="openRate"
+        android:text="Rate" />
 
 </RelativeLayout>

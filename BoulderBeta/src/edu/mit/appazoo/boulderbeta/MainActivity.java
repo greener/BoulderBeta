@@ -43,10 +43,13 @@ public class MainActivity extends ActionBarActivity {
 	
 	public void openSearch(View view){
 		Intent intent = new Intent(this, RoutesListActivity.class);
+		
+		
 		Spinner diffSpin = (Spinner)findViewById(R.id.spinner1);
 		String diff = diffSpin.getSelectedItem().toString();
 		Spinner holdSpin = (Spinner)findViewById(R.id.spinner2);
-		String hold = diffSpin.getSelectedItem().toString();
+		String hold = holdSpin.getSelectedItem().toString();
+		
 		intent.putExtra("EXTRA_DIFF", diff);
 		intent.putExtra("EXTRA_HOLD", hold);
 		startActivity(intent);

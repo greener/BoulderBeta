@@ -10,32 +10,51 @@
     <string name="title_activity_routes_list">RoutesListActivity</string>
     <string name="routeName">Example Route</string>
     <string name="difficulty_prompt">Choose a difficulty:</string>
-    
     <string name="welcome_prompt">Welcome to BoulderBeta! </string>
 
     <string-array name="difficulty_arrays">
-        <item></item>
-        <item>5.5</item>
-        <item>5.6</item>
-        <item>5.7</item>
-        <item>5.8</item>
-        <item>5.9</item>
-        <item>5.10</item>
-        <item>5.11</item>
-        <item>5.12</item>
+        <item>Any</item>
+        <item>v4</item>
+        <item>v0</item>
+        <item>v1/2</item>
+        <item>v2+</item>
+        <item>v5</item>
+        <item>v3</item>
+        <item>v1</item>
+        <item>v2+</item>
+        <item>v2</item>
+        <item>v0+</item>
+        <item>v1+</item>
+        <item>v3+ </item>
+        <item>v5-</item>
+        <item>v6</item>
     </string-array>
     <string-array name="holds_arrays">
-        <item></item>
-        <item>jugs</item>
-        <item>incuts</item>
-        <item>slopers</item>
-        <item>pockets</item>
-        <item>pinches</item>
-        <item>crimps</item>
-        <item>chips</item>
-        <item>edges</item>
+        <item>Any</item>
+        <item>blue</item>
+        <item>yellow</item>
+        <item>orange/blue</item>
+        <item>pink/purple</item>
+        <item>pink</item>
+        <item>green</item>
+        <item>blue/brown</item>
+        <item>green/blue</item>
+        <item>red/yellow</item>
+        <item>white/green rectangles</item>
+        <item>orange/brown</item>
+        <item>dark blue/green</item>
+        <item>orange</item>
+        <item>red/yellow</item>
+        <item>green/black</item>
+        <item>orange/blue</item>
+        <item>red</item>
+        <item>yellow/green</item>
+        <item>orange</item>
+        <item>red/black</item>
     </string-array>
 
     <string name="title_activity_welcome">Welcome</string>
+    <string name="title_activity_rate">RateActivity</string>
+    <string name="title_activity_new_account">NewAccountActivity</string>
 
 </resources>

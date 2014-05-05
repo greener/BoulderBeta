@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 /*
@@ -12,18 +14,34 @@ import android.widget.TextView;
  */
 
 public class RouteActivity extends ActionBarActivity {
-
+	String name;
+	String difficulty;
+	String style; 
+	Float rating;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_route);
 		
-		/*Intent intent = getIntent();
-		String name = intent.getStringExtra("NAME");
+		Intent intent = getIntent();
+		name = intent.getStringExtra("NAME");
 		TextView r = (TextView) findViewById(R.id.route_name);
-		r.setText(name);*/
+		r.setText(name);
 		
-
+		rating = intent.getFloatExtra("Rating", 0);
+		difficulty = intent.getStringExtra("difficulty");
+		style = intent.getStringExtra("style");
+		
+		System.out.println(rating); 
+		
+		RatingBar bar = (RatingBar) findViewById(R.id.RatingValue);  
+		bar.setRating(rating);
+		
+		TextView dText = (TextView) findViewById(R.id.DifficultyValue);
+		dText.setText(difficulty);
+		TextView sText = (TextView) findViewById(R.id.StyleValue);
+		sText.setText(style);
 	}
 
 	@Override
@@ -45,5 +63,17 @@ public class RouteActivity extends ActionBarActivity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
+	
+	public void openRate(View view){
+		System.out.println("here");
+		Intent act = new Intent(this, RateActivity.class);
+		act.putExtra("NAME", name);
+		act.putExtra("Rating", rating);
+		act.putExtra("style", style);
+		act.putExtra("difficulty",difficulty);
+		
+		startActivity(act);
+	}
+
 
 }

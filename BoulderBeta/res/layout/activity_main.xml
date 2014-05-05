@@ -15,7 +15,7 @@
         android:layout_marginLeft="25dp"
         android:layout_marginTop="22dp"
         android:entries="@array/difficulty_arrays"
-        android:prompt="@string/difficulty_prompt"/>
+        android:prompt="@string/difficulty_prompt" />
 
     <TextView
         android:id="@+id/textView1"
@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/spinner1"
-        android:text="Preferred holds:"
+        android:text="Preferred color:"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <Spinner
@@ -53,5 +53,5 @@
         android:layout_below="@+id/textView2"
         android:layout_marginTop="22dp"
         android:entries="@array/holds_arrays" />
-    
-    </RelativeLayout>
+
+</RelativeLayout>
